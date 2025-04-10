@@ -1,0 +1,10 @@
+import { Request, Response } from 'express';
+export declare const checkAIService: (req: Request, res: Response) => Promise<Response>;
+export declare const analyzeQuery: (req: Request, res: Response) => Promise<Response>;
+export declare const rankArticles: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const extractArticleReferences: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const generateArticleSummary: (req: Request, res: Response) => Promise<Response>;
+export declare const analyzeSearchResults: (req: Request, res: Response) => Promise<void>;
+export declare const getReferences: (req: Request, res: Response) => Promise<void>;
+export declare const analyzeArticlesController: (req: Request, res: Response) => Promise<Response>;
+export declare const extractReferencesController: (req: Request, res: Response) => Promise<Response>;
